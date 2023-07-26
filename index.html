@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title -->
+    <title>Fruit Brust</title>
+
+    <!-- tailwind and dasiy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind color customize link -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+            }
+          }
+        }
+      }
+      </script>
+
+    <!-- font awesome icon link -->
+    <script src="https://kit.fontawesome.com/843c5cd0a4.js" crossorigin="anonymous"></script>
+
+    <!-- Google font setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- lato font family -->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+  <header class="md:container md:mx-auto">
+    <!-- navigation bar start here -->
+
+    <div class="navbar bg-[#F85559] px-4 lg:px-10 py-1 lg:py-6 rounded-full">
+      <div class="navbar-start">
+        <div class="dropdown ">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-end justify-end lg:justify-center lg:navbar-center gap-2 lg:gap-5">
+        <img src="images/logo.png" alt="">
+        <h1 class="text-xl lg:text-5xl text-white">Fruit Burst</h1>
+      </div>
+      <div class="navbar-end hidden absulate lg:flex">
+        <div class="form-control relative">
+          <input type="text" placeholder="Search Here" class="input border-none w-24 md:w-auto lg:rounded-full"/>
+          <i class="fa-solid fa-magnifying-glass text-slate-800 absolute top-[18px] left-44 "></i>
+      </div>
+      </div>
+    </div>
+    <!-- navbar finished here -->
+  </header>
+  
+</body>
+</html>
